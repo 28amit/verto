@@ -1,16 +1,12 @@
 import "./Style.css";
 import Navbar from "./Components/Navbar/Navbar";
-import { Sidebar, SidebarItem } from "react-responsive-sidebar";
+import Sidbar from "./Components/Sidebar/Sidebar";
 
 function App() {
   return (
     <div className="main-container">
       <Navbar></Navbar>
-      <Sidebar
-        background="#1e293a"
-        breakPoint="768"
-        content={[<SidebarItem>Sidebar</SidebarItem>]}
-      ></Sidebar>
+      <Sidbar></Sidbar>
     </div>
   );
 }
